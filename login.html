@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>CLOTHING.COM</title>
+</head>
+<body>
+    <section class="header">
+        <a href="#"><img src="img/logo1.png" width="50px" class="logo" alt=""></a>
+        <div>
+            <ul class="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="rent.html">RENT</a></li>
+                <li><a href="blogs.html">BLOGS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a class="active" href="login.html">ACCOUNT</a></li>
+                <li id="lg-bag"><a href="cart.html"><span class="material-symbols-outlined">
+                            shopping_bag
+                        </span></a></li>
+                <a href="#" id="close"><span class="material-symbols-outlined">
+                        <i class='bx bx-x-circle'></i>
+                    </span></a>
+            </ul>
+        </div>
+        <div class="mobile">
+            <a href="cart.html"><span class="material-symbols-outlined">
+                    shopping_bag
+                </span></a>
+            <i id="bar" class='bx bx-menu active'></i>
+        </div>
+    </section>
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="img/login/image1.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btm">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+                        <!-- <div class="follow">
+                            <i class='bx bxl-facebook'></i>
+                            <i class='bx bxl-twitter'></i>
+                            <i class='bx bxl-instagram'></i>
+                        </div> -->
+
+                        <form id="LoginForm">
+                            <input type="text" placeholder="username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forget Password</a>
+                        </form>
+
+                        <form id="RegForm">
+                            <input type="text" placeholder="username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</html>
+</body>
